@@ -53,6 +53,13 @@ h2 {
     width: 100%;
     overflow: hidden;
 }
+.navbar-right {
+    float: right;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 .navbar-item {
     padding: 8px 16px;
     float: left;
