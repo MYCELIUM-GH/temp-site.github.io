@@ -5,6 +5,9 @@ body {
     font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
     line-height: 1.45;
 }
+div {
+    display: block;
+}
 header {
     color: #333333;
     background-color: #CCCCCC;
@@ -20,12 +23,20 @@ h2 {
   font-size: 1.5rem;
   margin: 0 0 16px 0;
 }
-#headtop {
-    font-size: 18px;
-    background-color: white;
-    color: #282A35;
-    padding-left: 12px;
-    padding-right: 16px;
+.navbar-top {
+    top: 0;
+}
+.navbar-top, .navbar-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-content {
+    width: 100%;
+    overflow: hidden;
+}
+.navbar-text-wide {
+    letter-spacing: 4px;
 }
 .container {
     margin: 0 auto;
