@@ -9,6 +9,8 @@ div {
     display: block;
 }
 header {
+    position: absolute;
+    z-index: 1;
     color: #333333;
     background-color: #CCCCCC;
     display: block;
@@ -56,9 +58,6 @@ h2 {
 .navbar-right {
     float: right;
 
-}
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 .navbar-item {
     padding: 8px 16px;
