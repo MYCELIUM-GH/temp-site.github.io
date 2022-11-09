@@ -23,6 +23,13 @@ h2 {
   font-size: 1.5rem;
   margin: 0 0 16px 0;
 }
+.site-padding {
+    padding: 8px 16px;
+}
+.site-white {
+    color: #000!important;
+    background-color: #fff!important;
+}
 .navbar-top {
     top: 0;
 }
