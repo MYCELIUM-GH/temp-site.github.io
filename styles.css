@@ -8,8 +8,8 @@ body {
 header {
     color: #333333;
     background-color: #CCCCCC;
-    padding: 40px 0;
-    text-align: center;
+    padding: 0;
+    text-align: left;
 }
 h1 {
   font-size: 3rem;
