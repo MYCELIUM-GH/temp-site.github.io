@@ -11,7 +11,7 @@ div {
 header {
     color: #333333;
     background-color: #CCCCCC;
-    padding: 0;
+    display: block;
     text-align: left;
 }
 h1 {
@@ -39,7 +39,7 @@ h2 {
     background-color: #ffffff;
 }
 .site-text-wide {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 .navbar-top {
     top: 0;
