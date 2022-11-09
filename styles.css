@@ -26,9 +26,20 @@ h2 {
 .site-padding {
     padding: 8px 16px;
 }
+.site-button {
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
 .site-white {
-    color: #000!important;
-    background-color: #fff!important;
+    color: #000000;
+    background-color: #ffffff;
+}
+.site-text-wide {
+    letter-spacing: 4px;
 }
 .navbar-top {
     top: 0;
@@ -42,8 +53,16 @@ h2 {
     width: 100%;
     overflow: hidden;
 }
-.navbar-text-wide {
-    letter-spacing: 4px;
+.navbar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.navbar-shadow {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 .container {
     margin: 0 auto;
