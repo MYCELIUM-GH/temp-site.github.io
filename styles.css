@@ -11,6 +11,10 @@ div {
 header {
     display: block;
 }
+img {
+    vertical-align: middle;
+    border-style: none;
+}
 h1 {
   font-size: 3rem;
   margin: 0 0 16px 0;
@@ -70,7 +74,7 @@ h2 {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 .header-display-container {
-    max-width: 1500px;
+    max-width: 980px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -79,8 +83,6 @@ h2 {
 .display-image {
     max-width: 100%;
     height: auto;
-    vertical-align: middle;
-    border-style: none;
 }
 @media screen and (max-width: 720px) {
     .navbar-hiden {
