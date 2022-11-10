@@ -92,7 +92,7 @@ h1 {
     text-align: center;
 }
 .section-features {
-    
+
 }
 @media screen and (max-width: 720px) {
     .navbar-hiden {
@@ -105,8 +105,68 @@ h1 {
     .display-image{
         max-width: 100%;
     }
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    section {
+        padding: 25px 0 15px 0;
+    } 
+    .feature {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature img {
+        width:15%;
+        min-width:60px;
+        margin-right:20px;
+    }
 }
-
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+.features {
+    background: #FFFFFF;
+    color: #000000;
+}
+.feature {
+    width: 32%;
+    display: inline-block;
+    font-size:16px;
+}
+.feature img {
+    width: 40%;
+}
+.quote {
+    background:#549DA0;
+    color:#FFFFFF;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+}  
+blockquote cite:before {
+    content: '–';
+    margin-right: 5px;
+}
 footer {
     background: #353535;
     padding: 32px 0;
