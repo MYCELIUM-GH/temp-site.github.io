@@ -47,7 +47,7 @@ h2 {
 .navbar-top, .navbar-bottom {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .navbar-content {
     width: 100%;
@@ -69,6 +69,19 @@ h2 {
 .navbar-shadow {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
+.header-display-container {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+.display-image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
 @media screen and (max-width: 720px) {
     .navbar-hiden {
         display: none;
@@ -77,18 +90,9 @@ h2 {
         float: none;
         text-align: center;
     }
-}
-.header-display-container {
-    max-width: 1500px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-.display-image {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
+    .display-image{
+        max-width: 720px;
+    }
 }
 section {
     text-align: center;
