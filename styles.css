@@ -101,6 +101,7 @@ h1 {
     .navbar-item {
         float: none;
         text-align: center;
+        width: 90%;
     }
     .display-image{
         max-width: 100%;
