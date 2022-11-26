@@ -5,6 +5,10 @@ body {
     font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
     line-height: 1.45;
 }
+@font-face {
+    font-family: pacific-sans-light;
+    src: url(/fonts/Pacific_Sans_Light.ttf);
+}
 div {
     display: block;
 }
@@ -31,6 +35,7 @@ h1 {
     margin-right: auto;
 }
 .site-button {
+    font-family: pacific-sans-light;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
