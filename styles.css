@@ -7,7 +7,7 @@ body {
 }
 @font-face {
     font-family: pacific-sans-light;
-    src: url(/fonts/Pacific_Sans_Light.ttf);
+    src: url(fonts/Pacific_Sans_Light.ttf);
 }
 div {
     display: block;
