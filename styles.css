@@ -124,6 +124,13 @@ h1 {
     border-bottom: 1px solid #ccc!important;
     border-color: #f1f1f1!important;
 }
+.project-row {
+    padding: 0 8px;
+    margin-top: 40px;
+}
+.row-container {
+    float: left;
+}
 @media screen and (max-width: 720px) {
     .site-padding {
     padding: 0.5rem 0.5rem!important;
