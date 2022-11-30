@@ -116,13 +116,13 @@ h1 {
 }
 .project-container {
     padding: 0.01em 16px;
-    border-bottom: 1px solid #ccc!important;
-    border-color: #f1f1f1!important;
 }
-.project-h1 {
+.project-h3 {
     font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
     margin: 10px 0;
+    border-bottom: 1px solid #ccc!important;
+    border-color: #f1f1f1!important;
 }
 @media screen and (max-width: 720px) {
     .site-padding {
