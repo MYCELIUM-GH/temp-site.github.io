@@ -7,10 +7,7 @@ body {
     padding: 0;
     line-height: 1;
 }
-div {
-    display: block;
-}
-header {
+div, footer, header {
     display: block;
 }
 img {
@@ -114,8 +111,46 @@ h1 {
     padding-top: 32px!important;
     padding-bottom: 32px!important;
 }
+
+.page-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-padding {
+    padding: 8px 16px!important;
+}
+.page-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.page-padding:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-row-padding {
+    padding: 0 8px;
+}
+.project-row-padding:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-row-padding:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-col {
+    float: left;
+    padding: 0 8px;
+}
+.project-margin-bottom {
+    margin-bottom: 16px!important;
+}
 .project-container {
-    padding: 0.01em 16px;
+    position: relative;
 }
 .project-h3 {
     font-family: "Segoe UI",Arial,sans-serif;
@@ -124,12 +159,15 @@ h1 {
     border-bottom: 1px solid #ccc!important;
     border-color: #f1f1f1!important;
 }
+.project-h3-container {
+    padding: 0.01em 16px;
+}
 .project-row {
     padding: 0 8px;
     margin-top: 40px;
 }
 .row-container {
-    float: left;
+    
 }
 @media screen and (max-width: 720px) {
     .site-padding {
@@ -152,61 +190,14 @@ h1 {
     h2 {
         font-size: 18px;
     }
-    section {
-        padding: 25px 0 15px 0;
-    } 
-    .feature {
-        width: 100%;
-        text-align: left;
-        margin: 0 0 10px 0;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media screen and (min-width: 993px) {
+    .project-col.l3 {
+        width: 24.99999%;
     }
-    .feature img {
-        width:15%;
-        min-width:60px;
-        margin-right:20px;
+@media screen and (min-width: 601px) {
+    .project-col.m6 {
+        width: 49.99999%;
     }
-}
-section {
-    text-align: center;
-    padding: 40px 0;
-}
-.features {
-    background: #FFFFFF;
-    color: #000000;
-}
-.feature {
-    width: 32%;
-    display: inline-block;
-    font-size:16px;
-}
-.feature img {
-    width: 40%;
-}
-.quote {
-    background:#549DA0;
-    color:#FFFFFF;
-}
-blockquote {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-blockquote p {
-    margin: 0 0 5px 0;
-    font-size: 24px;
-}
-blockquote cite {
-    font-size: 16px;
-    font-style: italic;
-}  
-blockquote cite:before {
-    content: '–';
-    margin-right: 5px;
-}
 footer {
     background: #353535;
     padding: 32px 0;
