@@ -1,9 +1,9 @@
-/* Fonts */
+/*Fonts*/
 @font-face {
     font-family: pacific-sans-light;
     src: url(fonts/Pacific_Sans_Light.ttf);
 }
-/* Main properties */
+/*Main properties*/
 * {
   box-sizing: border-box;
 }
