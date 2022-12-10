@@ -20,12 +20,22 @@ img {
     height: auto;
 }
 h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  margin: 10px 0;
-  color: #000;
-  background: #fff;
-  padding: 8px 16px;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000;
+    background: #fff;
+    padding: 8px 16px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 footer {
     background: #353535;
@@ -33,6 +43,7 @@ footer {
     text-align: center;
     color: #868686;
     font-size: 12px;
+    font-family: Verdana,sans-serif;
 }
 footer ul {
     margin: 0;
@@ -77,15 +88,20 @@ footer li a:hover {
 .page-padding {
     padding: 8px 16px!important;
 }
-.page-padding:before {
+.page-padding:before, .project-h3-container:before, .project-row-padding:before {
     content: "";
     display: table;
     clear: both;
 }
-.page-padding:after {
+.page-padding:after, .project-h3-container:after, .project-row-padding:after {
     content: "";
     display: table;
     clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* Navigation bar */
 .navbar-top {
@@ -158,6 +174,14 @@ footer li a:hover {
     margin-top: 16px;
     text-align: center;
 }
+.header-big-logo {
+    font-family: pacific-sans-light;
+    color: #fff!important;
+    background-color: #000!important;
+    opacity: 0.75;
+    font-size: 128px;
+    text-align: center;
+}
 /* Projects section */
 .project-h3-container {
     padding: 8px 8px;
@@ -171,7 +195,7 @@ footer li a:hover {
     border-color: #f1f1f1!important;
 }
 .project-row-padding {
-    padding: 0 8px;
+    padding: 1px;
 }
 .project-image-container {
     width: 100%;
@@ -226,7 +250,3 @@ footer li a:hover {
         width: 100%;
     }
 }
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
