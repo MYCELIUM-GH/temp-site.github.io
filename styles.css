@@ -263,6 +263,7 @@ footer li a:hover {
     text-align: center;
 }
 .columns {
+    font-family: "Segoe UI",Arial,sans-serif;
     float: left;
     width: 33.3%;
     padding: 8px;
