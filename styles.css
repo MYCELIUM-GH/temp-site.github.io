@@ -215,15 +215,6 @@ footer li a:hover {
     height: auto;
 }
 .header-display-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 16px;
-    text-align: center;
-}
-.header-big-logo {
-    font-family: pacific-sans-light;
     background-color: white;
     color: black;
     font-size: 10vw; /* Responsive font size */
@@ -237,6 +228,9 @@ footer li a:hover {
     left: 50%; /* Position text in the middle */
     transform: translate(-50%, -50%); /* Position text in the middle */
     mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+.header-big-logo {
+    font-family: pacific-sans-light;
 }
 /* Projects section */
 .project-h3-container {
