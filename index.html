@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 </head>
-<body>
-  		
+<body onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
 <!--Navigation Bar-->
 <div class="navbar-top">
 	<div class=" navbar-white site-padding site-text-wide navbar-content navbar-shadow">
@@ -114,11 +115,20 @@
 <!-- About Section -->
 <div class="project-h3-container padding-32" id="about">
 	<h3 class="project-h3 padding-16">Про компанію</h3>
-	<p><b>Провідний забудовник Київщині.</b></p>
-	<p><b>Будуємо та реалізовуємо житлову та комерційну нерухомість.</b></p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div class="about-row">
+		<div class="about-column" style="background-color:#aaa;">Провідний забудовник Київщині та Черкащіни</div>
+		<div class="about-column" style="background-color:#bbb;">
+			<ul>
+				<li>Вкладаємося в строки</li>
+				<li>Не порушуємо домовленостей</li>
+				<li>Використовуємо якісні матеріали</li>
+			</ul>
+		</div>
+		<div class="about-column" style="background-color:#ccc;">
+			<br>Реалізовуємо проекти  з 2019 року.
+			<br>Створюємо комфорт та затишок. Простір в якому ти відпочиваєш.
+			<br>Втілюємо в життя найсміливіші бажання.</div>
+	  </div>
 </div>
 
 <!-- Price Section -->
@@ -158,7 +168,7 @@
 	  <li>Вартість витратних матеріалів <br>(% від робіт): - </li>
 	</ul>
   </div>
-	<p>	<br>Вартість чистових оздоблювальних матеріалів визначається індивідуальними уподобаннями та можливостями замовника.
+  <p><br>Вартість чистових оздоблювальних матеріалів визначається індивідуальними уподобаннями та можливостями замовника.
 		<br>(Заздалегідь розрахувати неможливо, головний критерій оцінки - бюджет ремонту)
 	</p>
 <!--End of page content-->
@@ -175,5 +185,18 @@
     	<p>&copy; All rights reserved. by Sur</p>
 	</div>
 </footer>
+	</div>
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("myDiv").style.display = "block";
+		}
+		</script>
 </body>
 </html> 

@@ -3,6 +3,54 @@
     font-family: pacific-sans-light;
     src: url(fonts/Pacific_Sans_Light.ttf);
 }
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
 /*Main properties*/
 * {
   box-sizing: border-box;
@@ -21,6 +69,8 @@ div, footer, header {
 img {
     width: 100%;
     height: auto;
+    border-radius: 5px 5px 0 0;
+ 
 }
 h1 {
     font-size: 3rem;
@@ -211,7 +261,7 @@ footer li a:hover {
     background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/MYCELIUM-GH.github.io/main/temp_bg.jpg"); /* The image used - important! */
     background-size: cover;
     position: relative; /* Needed to position the cutout text in the middle of the image */
-    height: 300px; /* Some height */
+    height: 600px; /* Some height */
 }
 .header-text {
     font-family: pacific-sans-light;
@@ -272,7 +322,22 @@ footer li a:hover {
     width: 20%;
     padding: 8px;
   }
+  .about-column {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    float: left;
+    width: 33.3%;
+    height: 200px;
+    padding: 15px;
+  }
   
+  /* Clear floats after the columns */
+  .about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   /* Style the list */
   .price {
     list-style-type: none;
@@ -285,9 +350,8 @@ footer li a:hover {
   
   /* Add shadows on hover */
   .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   }
-  
   /* Pricing header */
   .price .header {
     background-color: #111;
