@@ -85,6 +85,18 @@ p {
     font-size: 15px;
     line-height: 1.5;
 }
+table {
+  margin-top: 60px;
+  margin-left: auto;
+    margin-right: auto;
+  border: solid 1px silver;
+  font-family: Verdana,sans-serif;
+}
+
+td {
+  padding: 5px;
+  border: solid 1px silver;
+}
 footer {
     background: #353535;
     padding: 32px 0;
@@ -316,10 +328,9 @@ footer li a:hover {
 
 .accordion {
   width: 100%;
-  max-width: 1080px;
   height: 250px;
   overflow: hidden;
-  margin: 50px auto;
+  margin: auto;
 }
 .accordion ul {
   width: 100%;
@@ -341,13 +352,13 @@ footer li a:hover {
   transition: all 500ms ease;
 }
 .accordion ul li:nth-child(1) {
-  background-image: url("https://unsplash.it/650/250?image=680");
+  background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/temp-site.github.io/main/pic1.png");
 }
 .accordion ul li:nth-child(2) {
-  background-image: url("https://unsplash.it/650/250?image=668");
+  background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/temp-site.github.io/main/pic2.png");
 }
 .accordion ul li:nth-child(3) {
-  background-image: url("https://unsplash.it/650/250?image=659");
+  background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/temp-site.github.io/main/pic3.png");
 }
 .accordion ul li div {
   display: block;
@@ -381,9 +392,9 @@ footer li a:hover {
   transition: all 400ms ease;
 }
 .accordion ul li div a h2 {
-  font-family: Montserrat, sans-serif;
   text-overflow: clip;
   font-size: 24px;
+  font-family: Open Sans, sans-serif;
   text-transform: uppercase;
   margin-bottom: 2px;
   top: 160px;
