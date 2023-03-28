@@ -207,14 +207,14 @@ footer li a:hover {
   display: block;
 }
 /* Header */
-.header-display-container {
-    position: relative;
+.header-image-container {
+    background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/MYCELIUM-GH.github.io/main/temp_bg.jpg"); /* The image used - important! */
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 300px; /* Some height */
 }
-.display-image {
-    max-width: 100%;
-    height: auto;
-}
-.header-display-text {
+.header-text {
+    font-family: pacific-sans-light;
     background-color: white;
     color: black;
     font-size: 10vw; /* Responsive font size */
@@ -228,9 +228,6 @@ footer li a:hover {
     left: 50%; /* Position text in the middle */
     transform: translate(-50%, -50%); /* Position text in the middle */
     mix-blend-mode: screen; /* This makes the cutout text possible */
-}
-.header-big-logo {
-    font-family: pacific-sans-light;
 }
 /* Projects section */
 .project-h3-container {
