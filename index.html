@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-<title>Головна сторінка</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-</head>
-<body onload="myFunction()" style="margin:0;">
-	<div id="loader"></div>
-	<div style="display:none;" id="myDiv" class="animate-bottom">
+	<head>
+		<title>Головна сторінка</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	</head>
+	<body onload="loader()" style="margin:0;">
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv" class="animate-bottom">
 <!--Navigation Bar-->
-<div class="navbar-top">
+<!--<div class="navbar-top">
 	<div class=" navbar-white site-padding site-text-wide navbar-content navbar-shadow">
   		<a href="#home" class="navbar-item navbar-button navbar-left">BUDVISION</a>
   		<div class="navbar-right navbar-hiden">
@@ -28,7 +28,16 @@
   			</div> 
 		</div>
   	</div>
-</div>
+</div>-->
+		<div class="topnav" id="myTopnav">
+				<a href="#home" class="topnav-left">BUDVISION</a>
+				<a class="topnav-item" href="#projects">Проекти</a>
+				<a class="topnav-item" href="#about">Про компанію</a>
+				<a class="topnav-item" href="./prices.html">Ціни</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  				<i class="fa fa-bars"></i>
+				</a>
+  		</div>
 
 <!--Header-->
 <header class="site-content" style="max-width: 1500px;" id="home">
@@ -202,7 +211,7 @@
 	<script>
 		var myVar;
 		
-		function myFunction() {
+		function loader() {
 		  myVar = setTimeout(showPage, 3000);
 		}
 		
@@ -210,6 +219,16 @@
 		  document.getElementById("loader").style.display = "none";
 		  document.getElementById("myDiv").style.display = "block";
 		}
+		</script>
+		<script>
+			function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 		</script>
 </body>
 </html> 

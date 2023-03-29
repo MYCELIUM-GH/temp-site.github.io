@@ -51,20 +51,20 @@
   box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 div, footer, header {
-    display: block;
+  display: block;
 }
 img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
  
 }
 h1 {
@@ -164,21 +164,6 @@ footer li a:hover {
 }
 
 /* Navigation bar */
-.navbar-top {
-    top: 0;
-}
-.navbar-top, .navbar-bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-.navbar-white {
-    color: #000000;
-    background-color: #ffffff;
-}
-.navbar-shadow {
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
 .navbar-content {
     width: 100%;
     overflow: hidden;
@@ -186,10 +171,7 @@ footer li a:hover {
 .navbar-item {
     padding: 8px 16px;
     float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0;
+    
 }
 .navbar-button {
     vertical-align: middle;
@@ -204,19 +186,6 @@ footer li a:hover {
 }
 .navbar-button:hover {
     color: #4CAF50;
-}
-.navbar-left {
-    font-family: pacific-sans-light;
-    font-size: 32px;
-    line-height: 0.8;
-}
-.navbar-right {
-    font-family: Verdana,sans-serif;
-    float: right;
-    font-size: 16px;
-    vertical-align: middle;
-    padding: 4px 32px;
-    display: inherit;
 }
 .dropdown {
   overflow: hidden;
@@ -263,7 +232,50 @@ footer li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.topnav {
+  background-color: #ffffff;
+  
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1px 5px;
+}
+.topnav-left {
+  font-family: pacific-sans-light;
+  font-size: 32px;
+}
+.topnav-right {
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 4px 32px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
 /* Header */
 .header-image-container {
     background-image: url("https://raw.githubusercontent.com/MYCELIUM-GH/MYCELIUM-GH.github.io/main/temp_bg.jpg");
@@ -543,4 +555,27 @@ footer li a:hover {
     .project-responsive {
         width: 100%;
     }
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    padding: 10px 14px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
 }
